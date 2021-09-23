@@ -16,7 +16,7 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, _ *http.Request) {
-	_, err := fmt.Fprintf(w, " <h1>welcome to go....ramya <h2>")
+	_, err := fmt.Fprintf(w, " <h1>welcome to go....ramya <h1>")
 	if err != nil {
 		return 
 	}
