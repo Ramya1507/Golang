@@ -10,8 +10,8 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -v -o Golang
+RUN go build -v -o Golang .
 
-EXPOSE 8081
+EXPOSE 8088
 
-CMD [ "/app" ]
+CMD [ "./Golang" ]
