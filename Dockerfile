@@ -12,6 +12,6 @@ COPY *.go ./
 
 RUN go build -v -o Golang .
 
-EXPOSE 8088
+EXPOSE 8087
 
 CMD [ "./Golang" ]
