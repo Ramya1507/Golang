@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Golang-webserver
+  name: golang-webserver
   labels:
     app: web
 spec:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: webserver
-          image: ramya1507/webserver-v2
+          image: ramya1507/webserver:v2
           ports:
             - containerPort: 80
